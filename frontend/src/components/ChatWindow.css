@@ -1,0 +1,60 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: white;
+}
+
+.chat-header-info h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.chat-header-info p {
+  margin: 5px 0 0 0;
+  color: #888;
+  font-size: 0.9em;
+}
+
+.connection-status {
+  font-size: 0.85em;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.connection-status.connected {
+  background: #e7f5e7;
+  color: #2e7d32;
+}
+
+.connection-status.disconnected {
+  background: #fce4ec;
+  color: #c62828;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.loading-messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #999;
+  font-size: 1.1em;
+}
